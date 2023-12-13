@@ -18,7 +18,7 @@ try:
     driver.find_element(By.XPATH, '/html/body/table/tbody/tr[11]/td/form/input[3]').click()
     time.sleep(5)
 
-except Exception as ex:
+except Exception as ex: #8
     print()
 finally:
     driver.close()
