@@ -6,6 +6,10 @@ from selenium.webdriver.common.by import By
 option = webdriver.ChromeOptions()
 
 driver = webdriver.Chrome(options=option)
+option.add_argument("--no-sandbox")
+option.add_argument("--headless")
+option.add_argument("--disable-gpu")
+
 try:
     driver.get('http://terabox.ru/index.php')
     time.sleep(3)
