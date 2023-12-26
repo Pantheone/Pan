@@ -26,7 +26,7 @@ try:
     b = f'/html/body/table/tbody/tr[{num}]/td[14]'
 
     for num in range(2, 21):
-        if f'/html/body/table/tbody/tr[{num}]/td[13]' != '00:00:00':
+        if f'/html/body/table/tbody/tr[{num}]/td[13]' != '00:00:00' and f'/html/body/table/tbody/tr[{num}]/td[14]' == '00:00:00':
             driver.find_element(By.XPATH, f'/html/body/table/tbody/tr[{num}]/td[14]').click()
         else:
             continue
