@@ -19,7 +19,7 @@ try:
     driver.find_element(By.NAME, "check").click()
     time.sleep(1)
     driver.find_element(By.XPATH, '/html/body/table/tbody/tr[11]/td/form/input[3]').click()
-    time.sleep(10)
+    time.sleep(5)
     while 1 < 2:
         num = 2
         for num in range(2, 21):
